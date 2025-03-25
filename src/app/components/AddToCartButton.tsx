@@ -12,10 +12,10 @@ interface AddToCartButtonProps {
 }
 
 export default function AddToCartButton({
-  productId,
+  // productId,
   productName,
-  price,
-  image,
+  //price,
+  //image,
   className,
 }: AddToCartButtonProps) {
   const [isLoading, setIsLoading] = useState(false);

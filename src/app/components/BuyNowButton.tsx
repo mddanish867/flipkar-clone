@@ -7,7 +7,12 @@ interface BuyNowButtonProps {
   className?: string
 }
 
-export function BuyNowButton({ productId, className }: BuyNowButtonProps) {
+export function BuyNowButton(
+  { 
+   // productId, 
+    className 
+  }: BuyNowButtonProps
+) {
   const [isLoading, setIsLoading] = useState(false)
   const router = useNavigate()
 

@@ -11,7 +11,7 @@ interface WishlistButtonProps {
 }
 
 export function WishlistButton({
-  productId,
+  //productId,
   productName,
   className = "",
   variant = "icon",
