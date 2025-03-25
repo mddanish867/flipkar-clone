@@ -140,7 +140,7 @@ export default function SignupPage() {
               By continuing, you agree to Flipkart&apos;s Terms of Use and Privacy Policy.
             </p>
 
-            <Button type="submit" className="w-full bg-[#fb641b] hover:bg-[#fb641b]/90">
+            <Button type="submit" className="w-full bg-[#fb641b] hover:bg-[#fb641b]/90 rounded-none h-12">
               Create Account
             </Button>
 

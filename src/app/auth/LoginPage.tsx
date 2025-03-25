@@ -61,7 +61,7 @@ export default function LoginPage() {
               <form onSubmit={handleLogin} className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="email">Email Address</Label>
-                  <Input
+                  <Input                 
                     id="email"
                     type="email"
                     placeholder="Enter Email"
@@ -84,7 +84,7 @@ export default function LoginPage() {
                 <p className="text-xs text-gray-500">
                   By continuing, you agree to Flipkart&apos;s Terms of Use and Privacy Policy.
                 </p>
-                <Button type="submit" className="w-full bg-[#fb641b] hover:bg-[#fb641b]/90">
+                <Button type="submit" className="w-full bg-[#fb641b] hover:bg-[#fb641b]/90 rounded-none h-12">
                   Login
                 </Button>
                 <div className="text-center">
@@ -136,7 +136,7 @@ export default function LoginPage() {
                   By continuing, you agree to Flipkart&apos;s Terms of Use and Privacy Policy.
                 </p>
 
-                <Button type="submit" className="w-full bg-[#fb641b] hover:bg-[#fb641b]/90">
+                <Button type="submit" className="w-full bg-[#fb641b] hover:bg-[#fb641b]/90 rounded-none h-12">
                   {isOtpSent ? "Verify OTP" : "Request OTP"}
                 </Button>
 

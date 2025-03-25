@@ -49,7 +49,7 @@ export default function ProductCarousel({ banners }: ProductCarouselProps) {
       <Button
         variant="ghost"
         size="icon"
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full h-8 w-8 md:h-10 md:w-10"
+        className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-none h-16 w-8 md:h-24 md:w-10"
         onClick={prevSlide}
       >
         <ChevronLeft className="h-5 w-5" />
@@ -57,7 +57,7 @@ export default function ProductCarousel({ banners }: ProductCarouselProps) {
       <Button
         variant="ghost"
         size="icon"
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-full h-8 w-8 md:h-10 md:w-10"
+        className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black rounded-none h-16 w-8 md:h-24 md:w-10"
         onClick={nextSlide}
       >
         <ChevronRight className="h-5 w-5" />

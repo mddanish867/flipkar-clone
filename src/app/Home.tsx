@@ -1,12 +1,12 @@
-import {Link} from "react-router-dom"
-import { ChevronRight, Search, ShoppingCart, } from "lucide-react"
+import { Link } from "react-router-dom";
+import { ChevronRight, Search, ShoppingCart } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import CategoryCard  from "../app/components/CategoryCard"
-import MobileHeader from "../app/components/MobileHeader"
-import ProductCard from "../app/components/ProductCard"
-import ProductCarousel from "../app/components/ProductCarousel"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import CategoryCard from "../app/components/CategoryCard";
+import MobileHeader from "../app/components/MobileHeader";
+import ProductCard from "../app/components/ProductCard";
+import ProductCarousel from "../app/components/ProductCarousel";
 
 // Sample data
 const categories = [
@@ -52,7 +52,7 @@ const categories = [
     image: "/vite.svg?height=80&width=80",
     url: "#",
   },
-]
+];
 
 const products = [
   {
@@ -121,7 +121,7 @@ const products = [
     reviews: 321,
     url: "#",
   },
-]
+];
 
 const banners = [
   {
@@ -139,7 +139,7 @@ const banners = [
     image: "/vite.svg?height=300&width=1200",
     url: "#",
   },
-]
+];
 
 export default function Home() {
   return (
@@ -152,7 +152,12 @@ export default function Home() {
               <span className="font-bold text-xl">Flipkart</span>
               <span className="text-xs italic flex items-center">
                 Explore <span className="text-yellow-400 mx-0.5">Plus</span>
-                <img src="/vite.svg?height=10&width=10" alt="Plus" width={10} height={10} />
+                <img
+                  src="/vite.svg?height=10&width=10"
+                  alt="Plus"
+                  width={10}
+                  height={10}
+                />
               </span>
             </Link>
             <div className="relative w-[500px]">
@@ -165,18 +170,24 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-8">
-            <Button className="text-[#2874f0] w-32 h-8 font-bold bg-white rounded-none hover:bg-white cursor-pointer">             
+            <Button className="text-[#2874f0] w-32 h-8 font-bold bg-white rounded-none hover:bg-white cursor-pointer">
               Login
             </Button>
             <Link to="#" className="font-medium">
               Become a Seller
             </Link>
             <div className="relative group">
-              <Button variant="link" className="text-white text-lg font-semibold no-underline hover:no-underline cursor-pointer">
+              <Button
+                variant="link"
+                className="text-white text-lg font-semibold no-underline hover:no-underline cursor-pointer"
+              >
                 More
               </Button>
             </div>
-            <Button variant="link" className="text-white text-lg font-semibold no-underline hover:no-underline cursor-pointer">
+            <Button
+              variant="link"
+              className="text-white text-lg font-semibold no-underline hover:no-underline cursor-pointer"
+            >
               <ShoppingCart className="mr-2 h-5 w-5" />
               Cart
             </Button>
@@ -190,14 +201,14 @@ export default function Home() {
       <main>
         {/* Categories */}
         <section className="bg-white py-3 px-4 shadow-sm hidden md:block">
-  <div className="max-w-7xl mx-auto">
-    <div className="grid grid-cols-4 md:grid-cols-7 gap-4">
-      {categories.map((category) => (
-        <CategoryCard key={category.id} category={category} />
-      ))}
-    </div>
-  </div>
-</section>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-4">
+              {categories.map((category) => (
+                <CategoryCard key={category.id} category={category} />
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Banner Carousel */}
         <section className="py-3 px-4 md:px-8 lg:px-16">
@@ -212,7 +223,10 @@ export default function Home() {
             <div className="bg-white p-4 rounded shadow-sm">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl font-bold">Best of Electronics</h2>
-                <Button variant="outline" className="bg-[#2874f0] text-white hover:bg-[#2874f0]/90">
+                <Button
+                  variant="outline"
+                  className="bg-[#2874f0] text-white hover:bg-[#2874f0]/90 rounded-none"
+                >
                   View All <ChevronRight className="h-4 w-4 ml-1" />
                 </Button>
               </div>
@@ -231,7 +245,10 @@ export default function Home() {
             <div className="bg-white p-4 rounded shadow-sm">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl font-bold">Deals of the Day</h2>
-                <Button variant="outline" className="bg-[#2874f0] text-white hover:bg-[#2874f0]/90">
+                <Button
+                  variant="outline"
+                  className="bg-[#2874f0] text-white hover:bg-[#2874f0]/90 rounded-none"
+                >
                   View All <ChevronRight className="h-4 w-4 ml-1" />
                 </Button>
               </div>
@@ -340,7 +357,9 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h3 className="text-gray-400 font-medium mb-3">Registered Office Address:</h3>
+            <h3 className="text-gray-400 font-medium mb-3">
+              Registered Office Address:
+            </h3>
             <p className="text-sm">
               Flipkart Internet Private Limited,
               <br />
@@ -364,6 +383,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-

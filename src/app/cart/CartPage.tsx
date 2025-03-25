@@ -99,7 +99,7 @@ export default function CartPage() {
                 </div>
               ))}
               <div className="p-4 flex justify-end">
-                <Button className="bg-[#fb641b] hover:bg-[#fb641b]/90 text-white">PLACE ORDER</Button>
+                <Button className="bg-[#fb641b] hover:bg-[#fb641b]/90 text-white rounded-none">PLACE ORDER</Button>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function CartPage() {
               <h2 className="font-medium mb-4">COUPONS</h2>
               <div className="flex items-center gap-2">
                 <Input placeholder="Enter coupon code" className="flex-grow" />
-                <Button className="bg-[#2874f0] hover:bg-[#2874f0]/90">Apply</Button>
+                <Button className="bg-[#2874f0] hover:bg-[#2874f0]/90 rounded-none">Apply</Button>
               </div>
             </div>
           </div>

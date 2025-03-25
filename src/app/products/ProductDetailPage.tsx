@@ -144,11 +144,11 @@ export default function ProductDetailPage() {
                   <img src={mainImage || "/vite.svg"} alt={product.name} className="absolute inset-0 w-full h-full object-contain" />
                 </div>
                 <div className="flex justify-center gap-4 mt-6">
-                  <Button className="bg-[#ff9f00] hover:bg-[#ff9f00]/90 text-white">
+                  <Button className="bg-[#ff9f00] hover:bg-[#ff9f00]/90 text-white rounded-none h-14 w-52">
                     <ShoppingCart className="h-5 w-5 mr-2" />
                     ADD TO CART
                   </Button>
-                  <Button className="bg-[#fb641b] hover:bg-[#fb641b]/90 text-white">BUY NOW</Button>
+                  <Button className="bg-[#fb641b] hover:bg-[#fb641b]/90 text-white rounded-none h-14 w-52">BUY NOW</Button>
                 </div>
               </div>
             </div>
