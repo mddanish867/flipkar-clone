@@ -159,25 +159,24 @@ export default function Home() {
               <Input
                 type="text"
                 placeholder="Search for products, brands and more"
-                className="h-10 pl-4 pr-12 rounded-sm bg-white text-black"
+                className="h-10 pl-4 pr-12 rounded-none bg-white text-black"
               />
               <Search className="absolute right-3 top-2.5 h-5 w-5 text-[#2874f0]" />
             </div>
           </div>
           <div className="flex items-center gap-8">
-            <Button variant="ghost" className="text-white font-medium">
-              <User className="mr-2 h-5 w-5" />
+            <Button className="text-[#2874f0] w-32 h-8 font-bold bg-white rounded-none hover:bg-white cursor-pointer">             
               Login
             </Button>
             <Link to="#" className="font-medium">
               Become a Seller
             </Link>
             <div className="relative group">
-              <Button variant="ghost" className="text-white font-medium">
+              <Button variant="link" className="text-white text-lg font-semibold no-underline hover:no-underline cursor-pointer">
                 More
               </Button>
             </div>
-            <Button variant="ghost" className="text-white font-medium">
+            <Button variant="link" className="text-white text-lg font-semibold no-underline hover:no-underline cursor-pointer">
               <ShoppingCart className="mr-2 h-5 w-5" />
               Cart
             </Button>
