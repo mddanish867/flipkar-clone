@@ -189,15 +189,15 @@ export default function Home() {
 
       <main>
         {/* Categories */}
-        <section className="bg-white py-3 px-4 md:px-8 lg:px-16 shadow-sm">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-4">
-              {categories.map((category) => (
-                <CategoryCard key={category.id} category={category} />
-              ))}
-            </div>
-          </div>
-        </section>
+        <section className="bg-white py-3 px-4 shadow-sm hidden md:block">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid grid-cols-4 md:grid-cols-7 gap-4">
+      {categories.map((category) => (
+        <CategoryCard key={category.id} category={category} />
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* Banner Carousel */}
         <section className="py-3 px-4 md:px-8 lg:px-16">
@@ -216,7 +216,7 @@ export default function Home() {
                   View All <ChevronRight className="h-4 w-4 ml-1" />
                 </Button>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {products.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
